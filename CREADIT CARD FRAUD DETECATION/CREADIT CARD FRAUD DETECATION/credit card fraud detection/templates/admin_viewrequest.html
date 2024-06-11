@@ -1,0 +1,38 @@
+{% include 'adminheader.html'%}
+  <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="/static/img/carousel-3.jpg" alt="Image" style="width: 300px">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                    	</div></div></div></div></div>
+<center>
+	<h1>View Request</h1>
+	<table class="table" style="width: 500px">
+		<tr>
+			<th>Slno</th>
+			<th>First Name</th>
+			<th>Details</th>
+			<th>Date</th>
+			<th>Status</th>
+			
+		</tr>
+		{% for row in data['req']%}
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{row['fname']}}</td>
+			<td>{{row['details']}}</td>
+			<td>{{row['date']}}</td>
+			<td>{{row['status']}}</td>
+			
+			{% if row ['status']=="pending"%}
+			<td><a class="btn btn-success" href="?action=accept&rid={{row['request_id']}}&uid={{row['user_id']}}">Accept</a></td>
+			<td><a class="btn btn-success" href="?action=reject&rid={{row['request_id']}}">Reject</a></td>
+			{% endif %}
+			
+		</tr>
+		{% endfor %}
+	</table>
+</center>
+{% include 'footer.html'%}

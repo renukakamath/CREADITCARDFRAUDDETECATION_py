@@ -1,0 +1,50 @@
+   {% include 'publicheader.html'%}  
+     <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="/static/img/carousel-3.jpg" alt="Image" style="height: 800px">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                    	<br><br><br><br>
+<center>
+	<h1  style="color: white">User Registration</h1>
+	<form method="post" enctype="multipart/form-data">
+		<table class="table" style="width: 500px;color: white">
+			<tr>
+				<th>First Name</th>
+				<td><input type="text" required="" class="form-control" name="fname"></td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td><input type="text" required="" class="form-control" name="lname"></td>
+			</tr>
+			<tr>
+				<th>Place</th>
+				<td><input type="text" required="" class="form-control" name="place"></td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td><input type="text" required="" class="form-control" pattern="[0-9]{10}" name="phone"></td>
+			</tr>
+			<tr>
+				<th>Email</th>
+				<td><input type="email" required="" class="form-control" name="email"></td>
+			</tr>
+		
+			<tr>
+				<th>User Name</th>
+				<td><input type="text" required="" class="form-control" name="uname"></td>
+			</tr>
+			<tr>	
+				<th>Password</th>
+				<td><input type="password" required="" class="form-control" name="pwd"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" name="user" class="btn btn-success"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+     </div></div></div></div></div>
+{% include 'footer.html'%}

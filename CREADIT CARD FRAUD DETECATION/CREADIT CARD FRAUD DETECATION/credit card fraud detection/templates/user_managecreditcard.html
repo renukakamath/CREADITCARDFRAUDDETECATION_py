@@ -1,0 +1,111 @@
+{% include 'userheader.html'%}
+  <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="/static/img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+
+<center>
+		<br><br><br><br><br>
+	<h1  style="color: white">Creadit Card</h1>
+	<form method="post">
+		{% if data['cred']%}
+		<table class="table" style="width: 500px;color: white">
+			<tr>
+				<th>Card Number</th>
+
+				<td><input type="text" name="card" required="" title="enter 16 digits" class="form-control" pattern="[0-9]{16}" value="{{data['cred'][0]['cardnum']}}"></td>
+			</tr>
+			<tr>
+				<th>Month</th>
+				<td><input type="month" name="month" required="" class="form-control" value="{{data['cred'][0]['month']}}"></td>
+			</tr>
+			<tr>
+				<th>C V V</th>
+				<td><input type="text" name="cvv" required="" class="form-control" value="{{data['cred'][0]['cvv']}}"></td>
+			</tr>
+			<tr>
+				<th>Pin No</th>
+				<td><input type="text" pattern="[0-9]{4}" required="" value="{{data['cred'[0]['pin_no']]}}" class="form-control" name="pin_no"></td>
+			</tr>
+			<tr>
+				<th>Ifsc Code</th>
+				<td><input type="text" required="" class="form-control" value="{{data['cred'][0]['ifsc_code']}}" name="ifsc"></td>
+			</tr>
+			<tr>
+				<th>Bank Number</th>
+				<td><input type="text" required="" class="form-control" value="{{data['cred'][0]['bank_num']}}" name="bank"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" class="btn btn-success" name="update"></td>
+			</tr>
+		</table>
+		{% else %}
+		<table class="table" style="width: 500px;color: white">
+			<tr>
+				<th>Card Number</th>
+
+				<td><input type="text" required="" title="enter 16 digits" pattern="[0-9]{16}" class="form-control" name="card"></td>
+			</tr>
+			<tr>
+				<th>Month</th>
+				<td><input type="month" required="" class="form-control" name="month"></td>
+			</tr>
+			<tr>
+				<th>C V V</th>
+				<td><input type="text" required="" class="form-control" name="cvv"></td>
+			</tr>
+			<tr>
+				<th>Pin No</th>
+				<td><input type="text" pattern="[0-9]{4}"  required="" class="form-control" name="pin_no" ></td>
+			</tr>
+			<tr>
+				<th>Ifsc Code</th>
+				<td><input type="text" required="" class="form-control"  name="ifsc"></td>
+			</tr>
+			<tr>
+				<th>Bank Number</th>
+				<td><input type="text" required="" class="form-control" name="bank"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" class="btn btn-success" name="credit"></td>
+			</tr>
+		</table>
+		{% endif %}
+	</form>
+</center>
+</div></div></div></div></div>
+<center>
+	<h1>View Creadit card</h1>
+	<table class="table" style="width: 500px">
+		<tr>
+			<th>Slno</th>
+			<th>Card Number</th>
+			<th>Month</th>
+			
+			<th>Pin No</th>
+
+			<th>Ifsc Code</th>
+			<th>Bank Number</th>
+			
+		</tr>
+		{% for row in data['cre']%}
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{row['cardnum']}}</td>
+			<td>{{row['month']}}</td>
+			<td>{{row['pin_no']}}</td>
+			
+			<td>{{row['ifsc_code']}}</td>
+			<td>{{row['bank_num']}}</td>
+			
+			<td><a class="btn btn-success" href="?action=delete&cid={{row['creditcard_id']}}">Delete</a></td>
+			<td><a class="btn btn-success" href="?action=update&cid={{row['creditcard_id']}}">Update</a></td>
+			<td><a class="btn btn-success" href="user_managedeposit?uid={{row['user_id']}}">Add Deposit</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+</center>
+{% include 'footer.html'%}

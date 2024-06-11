@@ -1,0 +1,36 @@
+{% include 'userheader.html'%}
+ <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+           
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="/static/img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+<center>
+	<h1 style="color: white">Make Payment</h1>
+	<form method="post">
+		<table class="table" style="width: 500px;color: white">
+			<tr>
+				<th>C V V</th>
+				<td><input type="text"  required="" class="form-control" name="cvv"></td>
+			</tr>
+			<tr>
+				<th>Card Holder</th>
+				<td><input type="text"  required="" class="form-control" name="Card"></td>
+			</tr>
+			<tr>
+				<th>Card Number</th>
+				<td><input type="text"  required="" class="form-control" name="cnum"></td>
+			</tr>
+			<tr>
+				<th>Expire date</th>
+				<td><input type="date"  required="" class="form-control" name="date"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" class="btn btn-success"  name="payment"></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</div></div></div></div></div>
+{% include 'footer.html'%}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_ipsettings.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_login.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_main.xml" value="0.10416666666666667" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_prediction.xml" value="0.1" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_registration.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_makepayment.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_managecreditcard.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_managedeposit.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_otp.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_requestacc.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_transfer.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_user_viewtransaction.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/activity_userhome.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/custtext.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/AndroidStudioProjects/CreditCard/app/src/main/res/layout/scanqr.xml" value="0.10416666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
